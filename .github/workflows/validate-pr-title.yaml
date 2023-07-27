@@ -38,6 +38,8 @@ jobs:
         echo $title | grep -Pq "$regex" || (echo "$ERROR_MSG" && exit 1)
   labels-check:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
