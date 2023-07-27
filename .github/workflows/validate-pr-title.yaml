@@ -3,11 +3,11 @@ on:
   pull_request:
     types: [opened, synchronize, edited, reopened]
     branches: 
-      - master
+      - main
   pull_request_target:
     types: [opened, synchronize, edited, reopened]
     branches: 
-      - master
+      - main
 
 jobs:
   title-check:
