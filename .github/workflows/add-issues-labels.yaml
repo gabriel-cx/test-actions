@@ -25,7 +25,7 @@ jobs:
     - name: Install JQ
       run: sudo apt-get install jq
     - name: Check user username
-      run: echo "IS_MEMBER=false" >> $GITHUB_ENV
+      run: echo "IS_MEMBER=true" >> $GITHUB_ENV
     - name: Add community label if user does not belong to Checkmarx Organization
       run: |
         if [[ "$IS_MEMBER" == "false" ]]; then
